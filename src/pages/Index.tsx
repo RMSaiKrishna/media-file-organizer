@@ -2,18 +2,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
-import { Image, Audio, Video, FileText, Book, Link as LinkIcon, File, Upload } from 'lucide-react';
+import { Image, FileAudio, Video, FileText, Book, Link as LinkIcon, File, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
   const categories = [
     { name: 'Images', icon: <Image className="w-10 h-10" />, path: '/images', color: 'bg-blue-50 text-blue-500' },
-    { name: 'Audio', icon: <Audio className="w-10 h-10" />, path: '/audio', color: 'bg-green-50 text-green-500' },
+    { name: 'Audio', icon: <FileAudio className="w-10 h-10" />, path: '/audio', color: 'bg-green-50 text-green-500' },
     { name: 'Videos', icon: <Video className="w-10 h-10" />, path: '/videos', color: 'bg-red-50 text-red-500' },
     { name: 'Documents', icon: <FileText className="w-10 h-10" />, path: '/documents', color: 'bg-yellow-50 text-yellow-500' },
     { name: 'Notes', icon: <Book className="w-10 h-10" />, path: '/notes', color: 'bg-purple-50 text-purple-500' },
     { name: 'Links', icon: <LinkIcon className="w-10 h-10" />, path: '/links', color: 'bg-indigo-50 text-indigo-500' },
-    { name: 'Voice', icon: <Audio className="w-10 h-10" />, path: '/voice', color: 'bg-pink-50 text-pink-500' },
+    { name: 'Voice', icon: <FileAudio className="w-10 h-10" />, path: '/voice', color: 'bg-pink-50 text-pink-500' },
   ];
 
   return (

@@ -2,7 +2,7 @@
 import React from 'react';
 import { 
   Image, 
-  Audio, 
+  FileAudio, 
   Video, 
   FileText, 
   Book, 
@@ -23,7 +23,7 @@ const FileItem = ({ file, onClick }: FileItemProps) => {
       case 'image':
         return <Image className="w-12 h-12" />;
       case 'audio':
-        return <Audio className="w-12 h-12" />;
+        return <FileAudio className="w-12 h-12" />;
       case 'video':
         return <Video className="w-12 h-12" />;
       case 'document':
@@ -33,7 +33,7 @@ const FileItem = ({ file, onClick }: FileItemProps) => {
       case 'link':
         return <LinkIcon className="w-12 h-12" />;
       case 'voice':
-        return <Audio className="w-12 h-12" />;
+        return <FileAudio className="w-12 h-12" />;
       default:
         return <File className="w-12 h-12" />;
     }
